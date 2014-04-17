@@ -10,50 +10,50 @@
     </head>
 
     <body>
-        <div class="app">
+        <div class="app" id="app">
             <div class="bar bar-header bar-light">
                 <h1 class="title">Login</h1>
                 <div class="err" id="error"></div>
             </div>
         <div class="list">
-        <form name="input" id="loginForm" action="http://brainmusic-diegovidal.rhcloud.com/login" method="post">
-          <label class="item item-input">
-             <span class="input-label">Username</span>
-             <input type="text" name="username" id="username">
-          </label>
+            <form name="input" id="loginForm" action="http://brainmusic-diegovidal.rhcloud.com/login" method="post">
+              <label class="item item-input">
+                 <span class="input-label">Username</span>
+                 <input type="text" name="username" id="username">
+              </label>
 
-          <label class="item item-input">
-                <span class="input-label">Password</span>
-                <input type="password" name="password" id="password">
-          </label>
-                <input type="submit" id="submitLogin" class="button button-block button-positive" value="Sing In"></input>
-     </form>
+              <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" name="password" id="password">
+              </label>
+                    <input type="submit" id="submitLogin" class="button button-block button-positive" value="Sign In"></input>
+                    <center>
+                      <div style="color:red" id="warning"></div>
+                    </center>
+         </form>
+        </div>
         </div>
 
         <a href="../www/signup.html" class="button button-clear button-positive">Sign Up</a>
 
 
         <!-- Footer -->
-            <div class="tabs tabs-icon-top">
+                    <div class="tabs tabs-icon-top">
               <a class="tab-item">
-                <i class="icon ion-android-storage"></i>
-                Listas
-              </a>
-              <a class="tab-item">
-                <i class="icon ion-ios7-heart"></i>
-                Favoritos
-              </a>
-              <a class="tab-item" href="../www/index.html">
                 <i class="icon ion-home"></i>
                 Home
               </a>
               <a class="tab-item">
                 <i class="icon ion-gear-a"></i>
-                Configuración
+                Settings
               </a>
               <a class="tab-item">
-                <i class="icon ion-star"></i>
-                Populares
+                <i class="icon ion-gear-a"></i>
+                Settings
+              </a>
+              <a class="tab-item">
+                <i class="icon ion-gear-a"></i>
+                Settings
               </a>
             </div>
 
@@ -64,6 +64,26 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript">
             app.initialize();
+            $(document).ready(function(){
+              $("#loginForm").submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                  type: "POST",
+                  url: "http://brainmusic-diegovidal.rhcloud.com/login",
+                  data: {username:$("#username").val(),password:$("#password").val()},
+                  success: function(data){
+                    if(data.length==0){
+                      $("#warning").html("Usuario o contraseña incorrectos");
+                    }
+                    else
+                    {
+                      console.log(data[0]);
+                      $("#app").html(data);
+                    }
+                  }
+                });
+              });
+            })
         </script>
     </body>
 </html>
