@@ -31,7 +31,11 @@
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/css/index.css \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/fonts/ionicons.eot \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/fonts/ionicons.svg \
+/home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/fonts/ionicons.ttf \
+/home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/fonts/ionicons.woff \
+/home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/js/monaca.viewport.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/js/index.js \
+/home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/js/jquery.min.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/spec/helper.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/spec/lib \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/spec/index.js \
