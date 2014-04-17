@@ -31,10 +31,12 @@
                       <div style="color:red" id="warning"></div>
                     </center>
          </form>
-        </div>
+       
         </div>
 
         <a href="../www/signup.html" class="button button-clear button-positive">Sign Up</a>
+
+         </div>
 
 
         <!-- Footer -->
@@ -77,8 +79,8 @@
                     }
                     else
                     {
-                      console.log(data[0]);
-                      $("#app").html(data);
+                      $("#app").html("Bienvenido "+data[0].name+"!");
+                      $("#app").append("<a href='../www/index.html' class='button button-clear button-positive'>Log out</a>");
                     }
                   }
                 });

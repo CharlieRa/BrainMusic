@@ -47,11 +47,17 @@
                       <div style="color:red" id="warning"></div>
                     </center>
          </form>
+<<<<<<< HEAD
         </div>
 >>>>>>> b9545a3d287019dcef1748b6e093008d242e61a4
+=======
+       
+>>>>>>> 7d4a0caa78f8ed85c5f477b63fdb89387a24720a
         </div>
 
         <a href="../www/signup.html" class="button button-clear button-positive">Sign Up</a>
+
+         </div>
 
 
         <!-- Footer -->
@@ -103,8 +109,8 @@
                     }
                     else
                     {
-                      console.log(data[0]);
-                      $("#app").html(data);
+                      $("#app").html("Bienvenido "+data[0].name+"!");
+                      $("#app").append("<a href='../www/index.html' class='button button-clear button-positive'>Log out</a>");
                     }
                   }
                 });
