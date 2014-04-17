@@ -23,6 +23,7 @@
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/cordova_plugins.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/phonegap.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/js \
+/home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/perfil.html \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/spec \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/res \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/cordova.js \
@@ -33,7 +34,6 @@
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/fonts/ionicons.svg \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/fonts/ionicons.ttf \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/fonts/ionicons.woff \
-/home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/js/monaca.viewport.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/js/index.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/js/jquery.min.js \
 /home/carlos/www/Apps/Mobile/BrainMusic/platforms/android/assets/www/spec/helper.js \
